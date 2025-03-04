@@ -48,3 +48,5 @@ ii  |   |
  /    |
       |
 =========''']
+
+logo = "Winner winner chicken dinnner"
