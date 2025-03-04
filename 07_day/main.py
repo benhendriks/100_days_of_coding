@@ -20,7 +20,7 @@ correct_letters = []
 
 while not game_over:
 
-    print("*/Lives left")
+    print(f"{lives}/Lives left.")
     guess = input("Guess a letter:").lower()
 
     if guess in correct_letters:
@@ -41,9 +41,10 @@ while not game_over:
 
     if guess not in chosen_word:
         lives -= 1
+        print(f"You gussed {guess}, that is not in the word. You lose a live.")
         if lives == 0:
           game_over = True
-          print("You lose!")
+          print(f"You lose. It was {chosen_word}")
 
     if "_" not in display:
         game_over = True
